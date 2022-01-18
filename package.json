@@ -31,6 +31,7 @@
     "class-transformer": "^0.5.1",
     "colors": "1.4.0",
     "moment": "^2.29.1",
+    "moment-timezone": "^0.5.34",
     "mongoose": "^6.1.7",
     "mysql2": "^2.3.3",
     "reflect-metadata": "^0.1.13",
