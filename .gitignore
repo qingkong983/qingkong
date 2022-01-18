@@ -1,6 +1,7 @@
 # 自定义
 pnpm-lock.yaml
 .idea
+conf/applicationdev.yml
 
 # compiled output
 /dist
