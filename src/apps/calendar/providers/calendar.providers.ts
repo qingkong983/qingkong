@@ -8,3 +8,11 @@ export const calendarProviders = [
     inject: ['DATABASE_CONNECTION'],
   },
 ]
+
+export const calendarMongoProviders = [
+  {
+    provide: 'MONGODB_CONNECTION_CalendarRepository',
+    useFactory: (connection: Connection) => connection.getRepository(Calendar),
+    inject: ['MONGODB_CONNECTION'],
+  },
+]
