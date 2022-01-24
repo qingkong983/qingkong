@@ -9,4 +9,9 @@ export class AppController {
   ow(): any {
     return this.appService.ow();
   }
+
+  @Get('v')
+  v(): any {
+    return '1.0.0';
+  }
 }
