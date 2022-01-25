@@ -6,3 +6,5 @@ docker run --name qingkong
 -p 11456:8080 
 -v ./application.yml:/usr/src/app/conf/application.yml 
 zhangtao25/qingkong
+
+upd
