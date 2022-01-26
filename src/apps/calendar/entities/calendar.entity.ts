@@ -58,4 +58,12 @@ export class Calendar extends CommonBaseEntity {
     name: 'date',
   })
   date: string
+
+  @Column({
+    type: 'varchar',
+    default: '',
+    comment: 'background',
+    name: 'background',
+  })
+  background: string
 }
