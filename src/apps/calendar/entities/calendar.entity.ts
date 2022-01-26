@@ -66,4 +66,5 @@ export class Calendar extends CommonBaseEntity {
     name: 'background',
   })
   background: string
+
 }
