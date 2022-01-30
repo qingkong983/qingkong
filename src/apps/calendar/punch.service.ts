@@ -47,7 +47,8 @@ export class PunchService extends TypeOrmCrudService<Punch> {
           id:arr[i].id,
           puncherId:user.id,
           puncherNickName: user.nickName,
-          puncherAvatarUrl: user.avatarUrl
+          puncherAvatarUrl: user.avatarUrl,
+          puncherTime: moment(arr[i].createdAt).add(8,'h').format('YYYY-MM-DD HH:mm')
         })
       }
 

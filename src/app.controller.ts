@@ -8,9 +8,9 @@ import {AuthService} from "./apps/auth/auth.service";
 export class AppController {
   constructor(private readonly appService: AppService,    private readonly authService: AuthService,) {}
 
-  @Get('v')
-  v(): any {
-    return '1.0.0';
+  @Get('version')
+  version(): any {
+    return {version:'1.0.0'};
   }
 
 
