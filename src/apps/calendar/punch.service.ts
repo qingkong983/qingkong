@@ -20,8 +20,8 @@ export class PunchService extends TypeOrmCrudService<Punch> {
   async todayPunch(){
     let qb = this.repo.createQueryBuilder('punch')
     const updateTimeRange = {
-      start: moment().tz('Asia/Shanghai').subtract(8,'h').subtract(1,'d').format('YYYY-MM-DD') + ' 16:00:00',
-      end: moment().tz('Asia/Shanghai').subtract(8,'h').format('YYYY-MM-DD') + ' 16:00:00'
+      start: moment().tz('Asia/Shanghai').subtract(0,'h').subtract(1,'d').format('YYYY-MM-DD') + ' 16:00:00',
+      end: moment().tz('Asia/Shanghai').subtract(0,'h').format('YYYY-MM-DD') + ' 16:00:00'
     }
     // const updateTimeRange = {
     //   start:'2020-01-01',
