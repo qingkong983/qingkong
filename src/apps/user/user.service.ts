@@ -69,7 +69,7 @@ export class UserService {
         .post('https://www.api.rico.org.cn/purplelog/log', {
           tags: ['weapp-api'],
           level: 'info',
-          msg: JSON.stringify(authLoginRes),
+          msg: JSON.stringify(findWeappIdRes),
         })
         .then((r) => {
           console.log(r)
